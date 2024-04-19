@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   plano = {
-    tipo: 'Simples',
-    preco: 100,
+    infos: {
+      tipo: 'Simples',
+      preco: 100,
+    }
   }
   
 }
@@ -20,6 +22,7 @@ export class CardComponent {
 "<app-card></app-card>"
 tipo = 'Simples';
 preco = 1000;
+tipo: null,
 
 
 getFullPrice()  {
