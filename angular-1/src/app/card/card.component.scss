@@ -21,12 +21,12 @@
     }
 }
 
-::ng-deep .card-cancel-button{
+::ng-deep #cancel-button .card-cancel-button{
 
     background-color: yellow !important;
 
 }
 
-#cancel-button .card-cancel-button {
+/*#cancel-button .card-cancel-button {
     background-color: yellow; 
-  }
+  }*/
