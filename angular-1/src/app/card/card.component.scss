@@ -21,12 +21,24 @@
     }
 }
 
+
+
+
+
+
+/*
 :host ::ng-deep app-card-button-cancel .card-cancel-button{
     background-color: yellow !important;
 }
 
 /*
 ::ng-deep app-card-button-cancel .card-cancel-button{
+
+    background-color: yellow !important;
+
+}
+
+::ng-deep .card-cancel-button{
 
     background-color: yellow !important;
 
