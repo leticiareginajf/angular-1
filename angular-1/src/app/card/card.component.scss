@@ -21,10 +21,17 @@
     }
 }
 
+.global{
+
+    background-color: greenyellow;
+
+}
 
 
-
-
+/*
+:host ::ng-deep mat-slider .mdc-slider__track--active_fill {
+    border-color: yellowgreen !important;
+}
 
 /*
 :host ::ng-deep app-card-button-cancel .card-cancel-button{

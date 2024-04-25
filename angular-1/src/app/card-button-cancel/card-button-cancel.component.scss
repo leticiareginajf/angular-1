@@ -1,10 +1,19 @@
+// Caminho Absoluto
+// @import "src/styles.scss";
+
+//Caminho Relativo
+// @import "../../styles/variables";
+
+//@import "/angular-1/src/styles/variables.scss";
+
 .card-cancel-button {
     
   font-size: 16px;
   text-align: center;
   margin-top: 10px; 
   border-radius: 25px; 
-  background-color: blue; 
+  background-color: green; 
+  //background-color: $bgColor;
   cursor: pointer; 
   font-weight: bold; 
   padding: 10px;
