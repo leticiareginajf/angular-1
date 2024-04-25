@@ -16,7 +16,7 @@ interface IInfos{
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
-  //encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent {
   //@ts-ignore
@@ -27,10 +27,6 @@ export class CardComponent {
     },
   };
   }
-
-
-
-
 
 /*
 "<app-card></app-card>"
