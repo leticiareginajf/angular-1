@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  //title = 'angular-1';
+ cardPlanType = 'Simples';
+ cardPlanPrice = 100;
 }
