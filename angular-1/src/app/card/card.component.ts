@@ -1,5 +1,12 @@
 import { Component, Input } from '@angular/core';
 
+
+function handlePlanType(value : string){
+  console.log('handlePlanType', value);
+  return value.toUpperCase();
+}
+
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -12,23 +19,9 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
 
   @Input({required: true, alias: 'planPriceAlias'}) planPrice: number = 0;
+  @Input({ alias: 'planType', transform: (value: string) => handlePlanType(value) }) planType: string = '';
 
 
-  private _planType: string = '';
-
-  @Input('planType') 
-  set planType(value: string){
-
-    this._planType = value.toUpperCase();
-
-  }
-
-
-  get planType(): string {
-
-     return this._planType;
-  }
-  
   buttonClicked(valueEmited : boolean){
     console.log('buttonClicked', valueEmited);
     console.log('planType', this.planType);
@@ -76,4 +69,23 @@ interface IInfos{
   preco: number;
 }
 
+
+
+  get planType(): string {
+
+     return this._planType;
+  }
+  
+
+  this._planType = value.toUpperCase();
+
+
+
+  set planType(value: string)
+
+
+  private _planType: string = '';
+
+
+  @Input('planType') planType: string = '';
 */
