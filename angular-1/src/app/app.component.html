@@ -9,11 +9,10 @@
 [planPriceAlias]="cardPlanPrice"></app-card>
 
 <app-card-roxo></app-card-roxo>
-<br/>
-
-<input #meuInput
-    type="text"
-    (heyup)="handlePlanType(meuInput.value)"
-    placeholder="Digite o plano" />
 
 </div>
+<br />
+<input #meuInput
+    type="text"
+    (keyup)="handlePlanType(meuInput.value)"
+    placeholder="Digite o plano" />
