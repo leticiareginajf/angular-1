@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, booleanAttribute } from '@angular/core';
 
 @Component({
   selector: 'app-card-button',
@@ -12,6 +12,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class CardButtonComponent {
 
 propTest : boolean = false;
+
+
+//@Input({ transform: booleanAttribute }) buttonDisabled: boolean = false;
 
  // @Output('buttonClick') buttonClickEmitter = new EventEmitter<boolean>();
  //@ts-ignore
